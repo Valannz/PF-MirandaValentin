@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/estilo.css">
+    <title>VMusic</title>
+</head>
+<body class="instrumentosbody">
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">VMusic</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark" aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse show" id="navbarDark">
+                    <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Instrumentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="equipos.html">Equipos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="accesorios.html">Accesorios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="instrumentosmain">
+        <h3 class="subtitulo">ESTOS SON NUESTROS INSTRUMENTOS</h3>
+        <div class="fondo"></div>
+        <div class="instrumentosgrid">
+            <div class="tarjeta">
+                <div class="cajaimg">
+                    <img src="../assets/baterias.jpg" alt="">
+                </div>
+                <div class="contenedorinstrumento">
+                    <h2>Baterias</h2>
+                    <p>Las baterías son la columna vertebral de la música rítmica. Incluyen tambores, platillos y pedales, y se utilizan en géneros como el rock, el funk y el jazz.</p>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="cajaimg">
+                    <img src="../assets/guitarras.jpg" alt="">
+                </div>
+                <div class="contenedorinstrumento">
+                    <h2>Guitarras</h2>
+                    <p>La guitarra es un instrumento musical que produce sonidos al hacer vibrar sus cuerdas. Tiene una caja de resonancia o pastillas, un mástil con trastes y seis cuerdas. Se toca pulsando o rasgueando las cuerdas. Es popular en todo el mundo y se usa en muchos géneros musicales.</p>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="cajaimg">
+                    <img src="../assets/teclados.jpg" alt="">
+                </div>
+                <div class="contenedorinstrumento">
+                    <h2>Teclados</h2>
+                    <p>Los teclados abarcan una amplia variedad de instrumentos, desde pianos digitales hasta sintetizadores. Son esenciales en géneros como el pop, el jazz, la música electrónica y más.</p>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="cajaimg">
+                    <img src="../assets/bajos.jpg" alt="">
+                </div>
+                <div class="contenedorinstrumento">
+                    <h2>Bajos</h2>
+                    <p>El bajo es un instrumento de cuerda similar a la guitarra, pero con un sonido más grave. Es fundamental en la música rock, funk y jazz.</p>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="cajaimg">
+                    <img src="../assets/microfonos.jpg" alt="">
+                </div>
+                <div class="contenedorinstrumento">
+                    <h2>Micrófonos</h2>
+                    <p>Aunque no es un instrumento en sí mismo, los micrófonos son esenciales para capturar el sonido de voces e instrumentos en grabaciones y presentaciones en vivo.</p>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="cajaimg">
+                    <img src="../assets/acordeones.jpg" alt="">
+                </div>
+                <div class="contenedorinstrumento">
+                    <h2>Acordeónes</h2>
+                    <p>El acordeón es un instrumento de viento y teclado que produce sonidos al comprimir y expandir su fuelle. Es común en la música folklórica y tradicional.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados.</p>
+        <div class="redes">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

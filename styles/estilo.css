@@ -1,0 +1,1179 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CELU - CELU - CELU - CELU - CELU - CELU - CELU - CELU - CELU - CELU - CELU - CELU - */ 
+
+@media screen and (max-width: 767px){
+    body{
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .navbar-brand{
+        font-family: "Playwrite BE VLG", cursive;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+
+    .titulobox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-image: url(../assets/marshall2.jpg);
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 40px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    .titulo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        margin-top: 40px;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        flex-flow: column wrap;
+        justify-content: center;   
+    }
+
+    .p1{
+        display: flex;
+        background-image: url(../assets/microfono.jpg);
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.842);
+        /* justify-content: center;
+        align-items: center; */
+        flex-flow: column;
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+
+    .p1{
+        display: flex;
+        background-image: url(../assets/microfono.jpg);
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.842);
+        /* justify-content: center;
+        align-items: center; */
+        flex-flow: column;
+        /* text-align: center; */
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+
+    #explora{
+        padding-left: 3px;
+        padding-right: 3px;
+        margin-right: 10px;
+        margin-left: 10px;
+        text-align: center;
+        color: white;
+        font-family: "Overpass", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 20px;
+        text-shadow: 1px 1px 2px #000000;
+    }
+
+    #botonvermas{
+        display: block;
+        margin: 0 auto;
+        /* margin-left: 37%;
+        margin-right: 37%; */
+    }
+
+    .video1 {
+        display: block;
+        margin: 0 auto;
+        width: 92%;
+        padding-top: 20px;
+    }
+
+    .card{
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* margin-left: 15px; */
+        margin-top: 20px;
+    }
+
+    /* INSTRUMENTOS - INSTRUMENTOS - INSTRUMENTOS - INSTRUMENTOS - INSTRUMENTOS - INSTRUMENTOS - INSTRUMENTOS - INSTRUMENTOS - INSTRUMENTOS - INSTRUMENTOS - INSTRUMENTOS - */
+
+    .instrumentosbody{
+        background-image: url(../assets/banda.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        min-height: 100vh;
+    } 
+
+    .subtitulo{
+        color: white;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        font-size: 35px;
+        text-align: center;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-shadow: 1px 1px 30px #000000;
+    }
+
+    .instrumentosgrid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        justify-items: center;
+        align-items: center;
+        padding-bottom: 100px;
+    }
+
+    .instrumentosgrid > div{
+        display: flex;
+        justify-content: center;
+    }
+
+    .tarjeta{
+        width: 280px;
+        aspect-ratio: 1 / 0.7;
+        border-radius: 8px;
+        position: relative;
+        cursor: pointer;
+       /*  width: 80%; */
+        /* margin: 0 auto; */
+    }
+
+    .cajaimg{
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+    }
+
+    .cajaimg img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: inherit;
+        transition: 0.5s ease-in-out;
+    }
+
+    .tarjeta::after{
+        content: "";
+        position: absolute;
+        inset: 0;
+        border: 2px solid white;
+        border-radius: inherit;
+        opacity: 0;
+        transition: 0.4s ease-in-out;
+    }
+
+    .tarjeta:hover img{
+        filter: grayscale(1) brightness(0.4);
+    }
+
+    .tarjeta:hover::after{
+        opacity: 1;
+        inset: 20px;
+    }
+
+    .contenedorinstrumento p{
+        display: none;
+    }
+
+    .contenedorinstrumento{
+        width: 290px;
+        color: white;
+        position: absolute;
+        top: 40%;
+        /* left: 50%; */
+        /* transform: translate(-50%, -50%); */
+        text-align: center;
+        text-shadow: 1px 1px 10px #000000;
+    }
+
+    /* EQUIPOS - EQUIPOS - EQUIPOS - EQUIPOS - EQUIPOS - EQUIPOS - EQUIPOS - EQUIPOS - EQUIPOS - EQUIPOS - EQUIPOS - */
+
+    .equiposbody{
+        background-color: rgb(79, 133, 115);
+        background-image: url(../assets/fender.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .carrusel{
+        width: 85%;
+        margin: 0 auto;
+        padding-top: 50%;
+    }
+
+    .subtitulo2{
+        color: white;
+        margin-top: 5%;
+        padding-bottom: 20px;
+        font-size: 35px;
+        text-align: center;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-shadow: 1px 1px 30px #000000;
+    }
+
+    @media (max-width: 576px){
+        .subtitulo2{
+            padding-top: 30px;
+        }
+
+        .carrusel{
+            padding-top: 5px;
+        }
+    }
+
+    /* ACCESORIOS - ACCESORIOS - ACCESORIOS - ACCESORIOS - ACCESORIOS - ACCESORIOS - ACCESORIOS - ACCESORIOS - ACCESORIOS - ACCESORIOS - ACCESORIOS - ACCESORIOS - */
+
+    .bodyaccesorios{
+        background-image: url(../assets/homestudio.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .subaccesorios{
+        color: white;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 8%;
+        font-size: 40px;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-shadow: 1px 1px 30px #000000;
+    }
+
+    .gridaccesorios{
+        display: grid;
+        margin-left: 20px;
+        margin-right: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .accesorio{
+        background-color: rgba(26, 26, 26, 0.671);
+        color: white;
+        padding: 5px;
+        border: 1px solid rgba(26, 26, 26, 0.671);
+        border-radius: 8px;
+        text-align: center;
+        font-family: "Josefin Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        position: relative;
+    }
+
+    .accesorio img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        transition: 0.5s ease;
+    }
+
+    .accesorio:hover img{
+        filter: blur(2px);
+    }
+
+    .ver-disponibles{
+        background-color: #3a3a3a;
+        color: #ffffff;
+        border: none;
+        border-radius: 4px;
+        padding: 8px 16px;
+        cursor: pointer;
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .accesorio:hover .ver-disponibles{
+        display: block;
+    }
+
+    @media (max-width: 1250px){
+        .gridaccesorios{
+            margin-bottom: 20px;
+        }
+    }
+
+
+    /* CONTACTO - CONTACTO - CONTACTO - CONTACTO - CONTACTO - CONTACTO - CONTACTO - CONTACTO - CONTACTO - CONTACTO - CONTACTO - */
+
+    .bodycontacto{
+        background-image: url(../assets/instrumentos.jpg);
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    .subcontacto{
+        text-align: center;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 30px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        /* text-shadow: 1px 1px 30px #000000; */
+    }
+    
+    .formulario-contacto{
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        margin-bottom: 40px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .etiqueta{
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    
+    .campo-input,
+    .campo-textarea{
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
+    
+    .campo-input:focus,
+    .campo-textarea:focus{
+        border-color: #1f1f1f;
+        outline: none;
+    }
+    
+    .boton-enviar {
+        background-color: #000000;
+        color: #ffffff;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 20px;
+        margin-left: 38%;
+        cursor: pointer;
+    }
+    
+    .boton-enviar:hover{
+        background-color: #4e4e4e;
+    }
+
+
+    footer{
+        background-color: rgb(0, 0, 0);
+        color: white;
+        text-align: center;
+        margin-top: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 15px;
+        justify-content: flex-end;
+    }
+    
+    footer .redes a{
+        color: #fff;
+        text-decoration: none;
+        justify-content: end;
+    }
+}
+
+/* TABLET - TABLET - TABLET - TABLET - TABLET - TABLET - TABLET - TABLET - TABLET - TABLET - */ 
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    body{
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .navbar-brand{
+        font-family: "Playwrite BE VLG", cursive;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+
+    .titulobox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-image: url(../assets/marshall2.jpg);
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 80px;
+        padding-top: 40px;
+    }
+
+    .titulo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        margin-top: 40px;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        flex-flow: column wrap;
+        justify-content: center;   
+    }
+
+    h1{
+        font-size: 80px;
+    }
+
+    .p1{
+        display: flex;
+        background-image: url(../assets/microfono.jpg);
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.842);
+        /* justify-content: center;
+        align-items: center; */
+        flex-flow: column;
+        /* text-align: center; */
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+
+    #explora{
+        padding-left: 3px;
+        padding-right: 3px;
+        margin-right: 100px;
+        margin-left: 100px;
+        text-align: center;
+        color: white;
+        font-family: "Overpass", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 25px;
+        text-shadow: 1px 1px 2px #000000;
+    }
+
+    #botonvermas{
+        display: block;
+        margin: 0 auto;
+        /* margin-left: 37%;
+        margin-right: 37%; */
+    }
+
+    .video1 {
+        display: block;
+        margin: 0 auto;
+        width: 55%;
+        padding-top: 20px;
+    }
+
+    .card{
+        display: flex;
+        width: 60%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20%;
+        margin-top: 20px;
+    }
+
+     /* INSTRUMENTOS - INSTRUMENTOS - INSTRUMENTOS - INSTRUMENTOS - INSTRUMENTOS - INSTRUMENTOS - INSTRUMENTOS - INSTRUMENTOS - INSTRUMENTOS - INSTRUMENTOS - INSTRUMENTOS - */
+
+    .instrumentosbody{
+        background-image: url(../assets/banda.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        min-height: 100vh;
+    } 
+
+    .subtitulo{
+        color: white;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        font-size: 70px;
+        text-align: center;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-shadow: 1px 1px 30px #000000;
+    }
+
+    .instrumentosgrid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        justify-items: center;
+        align-items: center;
+        padding-bottom: 100px;
+    }
+
+    .instrumentosgrid > div{
+        display: flex;
+        justify-content: center;
+    }
+
+    .tarjeta{
+        width: 400px;
+        aspect-ratio: 1 / 0.7;
+        border-radius: 8px;
+        position: relative;
+        cursor: pointer;
+       /*  width: 80%; */
+        /* margin: 0 auto; */
+    }
+
+    .cajaimg{
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+    }
+
+    .cajaimg img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: inherit;
+        transition: 0.5s ease-in-out;
+    }
+
+    .tarjeta::after{
+        content: "";
+        position: absolute;
+        inset: 0;
+        border: 2px solid white;
+        border-radius: inherit;
+        opacity: 0;
+        transition: 0.4s ease-in-out;
+    }
+
+    .tarjeta:hover img{
+        filter: grayscale(1) brightness(0.4);
+    }
+
+    .tarjeta:hover::after{
+        opacity: 1;
+        inset: 20px;
+    }
+
+    .contenedorinstrumento{
+        width: 80%;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        text-shadow: 1px 1px 10px #000000;
+    }
+
+    /* EQUIPOS - EQUIPOS - EQUIPOS - EQUIPOS - EQUIPOS - EQUIPOS - EQUIPOS - EQUIPOS - EQUIPOS - EQUIPOS - EQUIPOS - */
+
+    .equiposbody{
+        background-color: rgb(79, 133, 115);
+        background-image: url(../assets/fender.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .carrusel{
+        width: 65%;
+        margin: 0 auto;
+        padding-top: 5%;
+    }
+
+    .subtitulo2{
+        color: white;
+        margin-top: 5%;
+        padding-bottom: 20px;
+        font-size: 70px;
+        text-align: center;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-shadow: 1px 1px 30px #000000;
+    }
+
+    /* ACCESORIOS - ACCESORIOS - ACCESORIOS - ACCESORIOS - ACCESORIOS - ACCESORIOS - ACCESORIOS - ACCESORIOS - ACCESORIOS - ACCESORIOS - ACCESORIOS - ACCESORIOS - */
+
+    .bodyaccesorios{
+        background-image: url(../assets/homestudio.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .subaccesorios{
+        color: white;
+        text-align: center;
+        padding-top: 150px;
+        padding-bottom: 8%;
+        font-size: 80px;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-shadow: 1px 1px 30px #000000;
+    }
+
+    .gridaccesorios{
+        display: grid;
+        margin-left: 20px;
+        margin-right: 20px;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+    }
+
+    .accesorio{
+        background-color: rgba(26, 26, 26, 0.671);
+        color: white;
+        padding: 5px;
+        border: 1px solid rgba(26, 26, 26, 0.671);
+        border-radius: 8px;
+        text-align: center;
+        font-family: "Josefin Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        position: relative;
+    }
+
+    .accesorio img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        transition: 0.5s ease;
+    }
+
+    .accesorio:hover img{
+        filter: blur(2px);
+    }
+
+    .ver-disponibles{
+        background-color: #3a3a3a;
+        color: #ffffff;
+        border: none;
+        border-radius: 4px;
+        padding: 8px 16px;
+        cursor: pointer;
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .accesorio:hover .ver-disponibles{
+        display: block;
+    }
+
+
+    /* CONTACTO - CONTACTO - CONTACTO - CONTACTO - CONTACTO - CONTACTO - CONTACTO - CONTACTO - CONTACTO - CONTACTO - CONTACTO - */
+
+    .bodycontacto{
+        background-image: url(../assets/instrumentos.jpg);
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    .subcontacto{
+        text-align: center;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 60px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        /* text-shadow: 1px 1px 30px #000000; */
+    }
+    
+    .formulario-contacto{
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        margin-bottom: 40px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .etiqueta{
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    
+    .campo-input,
+    .campo-textarea{
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
+    
+    .campo-input:focus,
+    .campo-textarea:focus{
+        border-color: #1f1f1f;
+        outline: none;
+    }
+    
+    .boton-enviar {
+        background-color: #000000;
+        color: #ffffff;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 20px;
+        margin-left: 38%;
+        cursor: pointer;
+    }
+    
+    .boton-enviar:hover{
+        background-color: #4e4e4e;
+    }
+
+    
+    footer{
+        background-color: rgb(0, 0, 0);
+        color: white;
+        text-align: center;
+        margin-top: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 15px;
+        justify-content: flex-end;
+    }
+    
+    footer .redes a{
+        color: #fff;
+        text-decoration: none;
+        justify-content: end;
+    }
+}
+
+/* PC - PC - PC - PC - PC - PC - PC - PC - PC - PC - PC - PC - PC - PC - PC - PC - PC - PC - */
+
+@media screen and (min-width: 1024px){
+    body{
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .navbar-brand{
+        font-family: "Playwrite BE VLG", cursive;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+
+    /* HOME - HOME - HOME - HOME - HOME - HOME - HOME - HOME - HOME - HOME - HOME - HOME - HOME - HOME - HOME - HOME -  */
+
+    .titulobox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-image: url(../assets/marshall2.jpg);
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 5%;
+    }
+
+    .titulo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        margin-top: 50px;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+
+    .titulo h1{
+        font-size: 100px;
+    }
+
+    .p1{
+        display: flex;
+        background-image: url(../assets/microfono.jpg);
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.842);
+        /* justify-content: center;
+        align-items: center; */
+        flex-flow: column;
+        /* text-align: center; */
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+
+    #explora{
+        padding-left: 3px;
+        padding-right: 3px;
+        margin-right: 100px;
+        margin-left: 100px;
+        text-align: center;
+        color: white;
+        font-family: "Overpass", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 25px;
+        text-shadow: 1px 1px 2px #000000;
+    }
+
+    #botonvermas{
+        display: block;
+        margin: 0 auto;
+        /* margin-left: 37%;
+        margin-right: 37%; */
+    }
+
+    .video1 {
+        display: block;
+        margin: 0 auto;
+        width: 55%;
+        padding-top: 20px;
+    }
+
+    .card{
+        display: flex;
+        width: 60%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20%;
+        margin-top: 50px;
+    }
+
+    /* INSTRUMENTOS - INSTRUMENTOS - INSTRUMENTOS - INSTRUMENTOS - INSTRUMENTOS - INSTRUMENTOS - INSTRUMENTOS - INSTRUMENTOS - INSTRUMENTOS - INSTRUMENTOS - INSTRUMENTOS - */
+
+    .instrumentosbody{
+        background-image: url(../assets/banda.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        min-height: 100vh;
+    } 
+
+    .subtitulo{
+        color: white;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        font-size: 70px;
+        text-align: center;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-shadow: 1px 1px 30px #000000;
+    }
+
+    .instrumentosgrid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        justify-items: center;
+        align-items: center;
+        padding-bottom: 100px;
+    }
+
+    .instrumentosgrid > div{
+        display: flex;
+        justify-content: center;
+    }
+
+    .tarjeta{
+        width: 400px;
+        aspect-ratio: 1 / 0.7;
+        border-radius: 8px;
+        position: relative;
+        cursor: pointer;
+       /*  width: 80%; */
+        /* margin: 0 auto; */
+    }
+
+    .cajaimg{
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+    }
+
+    .cajaimg img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: inherit;
+        transition: 0.5s ease-in-out;
+    }
+
+    .tarjeta::after{
+        content: "";
+        position: absolute;
+        inset: 0;
+        border: 2px solid white;
+        border-radius: inherit;
+        opacity: 0;
+        transition: 0.4s ease-in-out;
+    }
+
+    .tarjeta:hover img{
+        filter: grayscale(1) brightness(0.4);
+    }
+
+    .tarjeta:hover::after{
+        opacity: 1;
+        inset: 20px;
+    }
+
+    .contenedorinstrumento{
+        width: 80%;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        text-shadow: 1px 1px 10px #000000;
+    }
+
+    @media (max-width: 1250px){
+        .instrumentosgrid{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    /* EQUIPOS - EQUIPOS - EQUIPOS - EQUIPOS - EQUIPOS - EQUIPOS - EQUIPOS - EQUIPOS - EQUIPOS - EQUIPOS - EQUIPOS - EQUIPOS - EQUIPOS - */
+
+    .equiposbody{
+        background-color: rgb(79, 133, 115);
+        background-image: url(../assets/fender.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .carrusel{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .subtitulo2{
+        color: white;
+        margin-top: 20px;
+        padding-bottom: 20px;
+        font-size: 70px;
+        text-align: center;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-shadow: 1px 1px 30px #000000;
+    }
+
+    @media (max-width: 1250px){
+        .subtitulo2{
+            padding-top: 80px;
+        }
+
+        .carrusel{
+            padding-top: 70px;
+        }
+    }
+
+    @media (min-width: 1400px){
+        .carrusel{
+            width: 30%;
+        }
+    }
+
+    /* ACCESORIOS - ACCESORIOS - ACCESORIOS - ACCESORIOS - ACCESORIOS - ACCESORIOS - ACCESORIOS - ACCESORIOS - ACCESORIOS - ACCESORIOS - ACCESORIOS - ACCESORIOS - */
+
+    .bodyaccesorios{
+        background-image: url(../assets/homestudio.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .subaccesorios{
+        color: white;
+        text-align: center;
+        padding-top: 150px;
+        padding-bottom: 8%;
+        font-size: 80px;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-shadow: 1px 1px 30px #000000;
+    }
+
+    .gridaccesorios{
+        display: grid;
+        margin-left: 20px;
+        margin-right: 20px;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+    }
+
+    .accesorio{
+        background-color: rgba(26, 26, 26, 0.671);
+        color: white;
+        padding: 5px;
+        border: 1px solid rgba(26, 26, 26, 0.671);
+        border-radius: 8px;
+        text-align: center;
+        font-family: "Josefin Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        position: relative;
+    }
+
+    .accesorio img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        transition: 0.5s ease;
+    }
+
+    .accesorio:hover img{
+        filter: blur(2px);
+    }
+
+    .ver-disponibles{
+        background-color: #3a3a3a;
+        color: #ffffff;
+        border: none;
+        border-radius: 4px;
+        padding: 8px 16px;
+        cursor: pointer;
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .accesorio:hover .ver-disponibles{
+        display: block;
+    }
+
+
+/* CONTACTO - CONTACTO - CONTACTO - CONTACTO - CONTACTO - CONTACTO - CONTACTO - CONTACTO - CONTACTO - CONTACTO - CONTACTO - */
+
+    .bodycontacto{
+        background-image: url(../assets/instrumentos.jpg);
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    .subcontacto{
+        text-align: center;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 60px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        /* text-shadow: 1px 1px 30px #000000; */
+    }
+    
+    .formulario-contacto{
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        margin-bottom: 40px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .etiqueta{
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    
+    .campo-input,
+    .campo-textarea{
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
+    
+    .campo-input:focus,
+    .campo-textarea:focus{
+        border-color: #1f1f1f;
+        outline: none;
+    }
+    
+    .boton-enviar {
+        background-color: #000000;
+        color: #ffffff;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 20px;
+        margin-left: 38%;
+        cursor: pointer;
+    }
+    
+    .boton-enviar:hover{
+        background-color: #4e4e4e;
+    }
+
+
+
+
+
+    footer{
+        background-color: rgb(0, 0, 0);
+        color: white;
+        text-align: center;
+        margin-top: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 15px;
+        justify-content: flex-end;
+    }
+    
+    footer .redes a{
+        color: #fff;
+        text-decoration: none;
+        justify-content: end;
+    }
+}
